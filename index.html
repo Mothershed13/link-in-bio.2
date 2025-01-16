@@ -1,24 +1,122 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8"
-    <title>Tyler's Links</title>
-    <style> * { border: thin red solid}</style>
+    <title>Tyler's Link In Bio</title>
+    <style> /*  * { border: thin red solid} */
+    
+    html {
+      min-height: 100%;
+    }
+      body{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: linear-gradient(90deg, #07105b, #00317f, #00519f, #0073bc, #0095d3, #00b8e6, #00dcf4, #1cffff); 
+        min-height: 100%;
+        color: white;
+        font-family: "Raleway";
+      
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .item {
+        background-color: rgba(149, 123, 173, 0.5);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 1000px;
+        padding: 5px;
+        padding-right: 53px;
+        -webkit-box-shadow: 54px -94px 121px -57px rgba(0,0,0,0.75);
+-moz-box-shadow: 54px -94px 121px -57px rgba(0,0,0,0.75);
+box-shadow: 54px -94px 121px -57px rgba(0,0,0,0.75);
+      }
+
+      .main-container {
+        max-width: 640px;
+        margin: auto;
+      }
+      .avatar-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+
+      }
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: "Impact";
+        font-size: 24px;
+        font-weight: 900;
+      }
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
+      }
+    </style>
   </head>
   <body>
     <div class="main-container">
       <div class="image-row"> 
-        <img src="/thumbnails/tyler.jpg" alt="headshot of woman ith short natural hair"
+        <img class="avatar-image" src="/thumbnails/tyler.jpg" alt="headshot of woman ith short natural hair"
       </div>
 
       <div class="name-row">Tyler Mothershed</div>
 
-      <div class="social-icons-row">  </div>
+      <div class="social-icons-row"> 
+        <a  href="https://github.com/Mothershed13" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/tyler-mothershed-007162180/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.facebook.com/">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
       <div class="links-row">
-        <div class="item">first link</div>
-        <div class="item">second link</div>
-        <div class="item">thrisd link</div>
-        <div class="item">foruth link</div>
+        <div class="item">
+          <img class="thumbnail" src="/thumbnails/dancing-icon.jpg">
+         <a class="link-text" target="_blank" href="https://www.youtube.com/watch?v=1gupzf9jFvc"> I love to dance, here is a video of my dance company</a>
+        </div>
+
+        <div class="item"> 
+          <img class="thumbnail" src="/thumbnails/schooling.jpg">
+          <a class="link-text" target="_blank" href="https://www.youtube.com/watch?v=A9EZJZ2OfSI"> teaching is a passion,check out some of cool teaching techniques</a>
+        </div>
+
+        <div class="item"> <img class="thumbnail" src="/thumbnails/reading-icon.jpg.png">
+          <a class="link-text" target="_blank" href="https://www.youtube.com/watch?v=O58brpCvmRs">I love to read, check out one of my favorite books</a>
+         </div>
+
+        <div class="item"> <img class="thumbnail" src="/thumbnails/easel-icon.jpg">
+        <a class="link-text" target="_blank" href="https://mcachicago.org/"> I love art, check out this local art exhibit</at> </div>
     </div>
 
     </div>
